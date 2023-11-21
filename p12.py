@@ -10,7 +10,6 @@ def triad():
     for k in range(0,len(list1),1):    
         for i in range(0,len(list2),1):
             d=math.sqrt((list1[k]*list1[k])+(list2[i]*list2[i]))
-        
             if(d==int(d)):
                 print("Square of(",list1[k],")","+","Square of(",list2[i],") =Square(",d,")-  So(",list1[k],",",list2[i],",",d,")is a triad")
                 count=count+1
