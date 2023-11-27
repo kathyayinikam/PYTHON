@@ -28,9 +28,11 @@ y1=current_date.year
 time=str(h)+str(m)+str(s)
 date1=str(d1)+str(m1)+str(y1)
 date=(time+str(d1)+str(m1)+str(y1))
-for i in range(0,4,1):
+while True:
     
     info1=f1.readline()
+    if not info1:
+            break
     result=odd_even(info1)
     if(int(date1)%2==0):
         r1=date+result[0]
@@ -44,6 +46,7 @@ for i in range(0,4,1):
     f2.write(r1)
     f3.write(r2)
     f3.write("\n")
+    
 
 f3.close()
 f2.close()
