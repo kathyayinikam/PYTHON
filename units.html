@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <style>
+        h2{
+            color: white;
+        }
+        body{
+            background-image: url("back.jpg");
+            color:white;
+        }
+        .parent1 {
+          width: 500px;
+          background-color: green;
+          height: 30px;
+          color:white
+        }
+        .child1 {
+          width: 50%;
+          background-color: red;
+          height: 30px; 
+         
+        }
+        .child11 {
+            width: 30%;
+            background-color: yellow;
+            height: 30px; 
+           color: black;
+          }
+        .parent2 {
+            font-size:16px;
+           
+            height:30px;
+        }
+        .child2 {
+            font-size: 1em;
+            height:30px;
+        }
+        .child21 {
+            font-size: 2em;
+            height:30px;
+          
+        }
+        html {
+            font-size: 16px;
+        }
+        .child3 {
+            font-size: 2rem;
+            
+        }
+        .child4 {
+            width: 100px;
+            height: 30px;
+            background-color: aquamarine;
+        }
+        .child5 {
+            width: 200px;
+            background-color:rgb(155, 108, 215);
+            color:whitesmoke;
+            height: 30px;
+        }
+        .child6{
+            width: 300px;
+            background-color: rgb(154, 195, 233);
+            height: 30px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+    <h2>%</h2>
+    <div class="parent1">parent element=500px
+        <div class="child1">child=50% of 500px</div>
+        <div class="child11">child=30% of 500px</div>
+        </div> 
+    </div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <div class="div1">
+    <h2>em</h2>
+    <div class="parent2">This is a parent element(16px)
+        <div class="child2">This element is 1em times the font-size of its parent.(1em)</div>
+        <div class="child21">This element is 2em times the font-size of its parent.(2em)</div>
+    </div>
+</div>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <div class="div1">
+    <h2>rem</h2>
+    <div>This is a parent element with root font size(16px)
+    <div class="child3">This element is 2rem times the root font size.</div>
+</div>
+</div>
+<hr>
+<div class="div1">
+<h2>px</h2>
+    <div class="child4"style="color:black"> 100 px.</div>
+    <div class="child5">200 px</div>
+    <div class="child6">300 px</div>
+</div>
+</body>
+</html>
