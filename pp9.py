@@ -6,5 +6,5 @@ with open("adapt.txt",encoding="UTF-8") as f1:
     list2=set(list4)
     list3=sorted(list2)
 with open("sorted_a.txt","w",encoding="UTF-8") as f2:
-    f2.write(" ".join(list3))
+    f2.write(str(list3).strip(","))
     print(list3)
