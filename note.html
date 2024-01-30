@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(236, 172, 117);
+            line-height: 0;
+            justify-content: center;
+        }
+        .row1{
+            margin-left:250px;
+            line-height: 0;
+         margin-top: 50px;
+            display:flex;
+        }
+        .row2{
+            margin-left:250px;
+            display:flex;
+            line-height: 0;
+        }
+        .white1, .white2{
+         display: flex;
+         flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            background-color: white;
+            color:black;
+            height:200px;
+            width:350px;
+            line-height: 0;
+           
+        }
+        .white2,.black1{
+            margin-left: 10px;
+        }
+        .black1,.black2{
+            display: flex;
+         flex-direction: column;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(50, 49, 49);
+color:white;
+height:200px;
+width:350px;
+line-height: 0;
+        }
+        h3,p{
+            font-family: 'Calibri' ;
+            font-weight:bolder;
+        }
+    </style>
+</head>
+<body>
+    <h3 style="position: absolute;top: 4%;left: 35%;transform: translate(-50%, -50%);z-index: 1; font-size: 18px;font-weight: bold;">Urgent</h3>
+    
+    <h3 style="position: absolute;top: 4%;left: 70%;transform: translate(-50%, -50%);z-index: 1; font-size: 18px;font-weight: bold;">Not Urgent</h3>
+    <h3 style="transform: translate(-50%, -50%);z-index: 1; position: absolute;top:45%;left: 20%;transform: translate(-50%, -50%);z-index: 1; transform: rotate(180deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: bold;
+    writing-mode: vertical-lr;
+    ;line-height:1;">Important <br>&nbsp;&nbsp;&nbsp;&nbsp;Not</h3> 
+    <h3 style="position: absolute;top: 4%;left: 20%;transform: translate(-50%, -50%);z-index: 1; transform: rotate(180deg);
+    transform-origin: left bottom;
+    white-space: nowrap;
+    font-size: 18px;
+    font-weight: bold;
+    writing-mode: vertical-lr;">Important</h3>
+    <div class="row1">
+     
+    <div class="white1" style="font-family:calibri"><h1 style="font-weight:900;font-size:30px;">Do</h1><p>Do it now.</p></div>
+    <br><br>
+    <div class="black1" style="font-family:calibri"><h1 style="font-weight:bolder;font-size:30px;">Decide</h1><p>Schedule a time for it.</p></div>
+</div>
+<div class="row2">
+    <div class="black2"style="font-family:calibri;margin-top:10px"><h1 style="font-weight:bolder;font-size:30px;">Delegate</h1><p>Who can do it for you?</p></div>
+    <br><br>
+    <div class="white2"style="font-family:calibri;margin-top:10px"><h1 style="font-weight:bolder;font-size:30px;">Delete</h1><p>Eliminate it.</p></div>
+</div>
+</body>
+</html>
