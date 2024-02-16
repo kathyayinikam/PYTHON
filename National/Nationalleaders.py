@@ -1,0 +1,30 @@
+import cv2
+import numpy as np
+
+image1=cv2.imread("na1.jpg")
+image1=cv2.resize(image1,(400,400))
+image2=cv2.imread("na2.jpg")
+image2=cv2.resize(image2,(400,400))
+image3=cv2.imread("na3.jpg")
+image3=cv2.resize(image3,(400,400))
+image4=cv2.imread("na4.jpg")
+image4=cv2.resize(image4,(400,400))
+image5=cv2.imread("na5.jpg")
+image5=cv2.resize(image5,(400,400))
+image6=cv2.imread("na6.jpg")
+image6=cv2.resize(image6,(400,400))
+image7=cv2.imread("na7.jpg")
+image7=cv2.resize(image7,(400,400))
+image8=cv2.imread("na8.jpg")
+image8=cv2.resize(image8,(400,400))
+image9=cv2.imread("na9.jpg")
+image9=cv2.resize(image9,(400,400))
+image10=cv2.imread("na10.jpg")
+image10=cv2.resize(image10,(400,400))
+
+hstack1=np.hstack([image1,image2,image3,image4,image5])
+hstack2=np.hstack([image6,image7,image8,image9,image10])
+image_row = np.concatenate((hstack1,hstack2), axis=0)
+cv2.imwrite("Row1.jpg",image_row)
+
+cv2.imshow("temp1", image_row)
